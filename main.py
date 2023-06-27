@@ -25,6 +25,7 @@ class Simulation:
     def __init__(self):
         self.win = pg.display.set_mode(WIN_SIZE)
         pg.display.set_caption("Conway's Game of Life")
+        pg.display.set_icon(pg.image.load("icon.png"))
         self.main_clock = pg.time.Clock()
         self.simulation_clock = pg.time.Clock()
 
